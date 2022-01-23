@@ -1,0 +1,10 @@
+@using blogapp.Data;
+@model Post
+
+<form asp-action="Create" asp-controller="Post" method="post">
+    <input placeholder="Id" asp-for="Id">
+    <input placeholder="Title" asp-for="Title">
+    <input placeholder="Content" asp-for="Content">
+
+    <button type="submit">Create</button>
+</form>

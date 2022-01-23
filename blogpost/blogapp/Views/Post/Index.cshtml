@@ -1,0 +1,18 @@
+@using blogapp.Data;
+@model List<Post>;
+
+@if(Model.Count() < 1)
+{
+    <p>NO POST YET!</p>
+}
+else
+{
+    foreach(var post in Model)
+    {
+        <div class="d-inline">
+            <p>@post.Id</p>
+            <p>@post.Title</p>
+            <p>@post.Content</p>
+        </div>
+    }
+}
